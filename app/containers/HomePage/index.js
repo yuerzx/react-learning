@@ -57,6 +57,10 @@ export class HomePage extends React.Component {
     this.openRoute('/features');
   };
 
+  openUserProfile = () => {
+    this.openRoute('/UserProfile');
+  };
+
   render() {
     let mainContent = null;
 
@@ -78,6 +82,7 @@ export class HomePage extends React.Component {
 
     return (
       <article>
+        
         <div>
           <section className={`${styles.textSection} ${styles.centered}`}>
             <H2>Start your next react project in seconds</H2>
@@ -101,6 +106,7 @@ export class HomePage extends React.Component {
             {mainContent}
           </section>
           <Button handleRoute={this.openFeaturesPage}>Features</Button>
+          <Button handleRoute={this.openUserProfile}>User Profile</Button>
         </div>
       </article>
     );

@@ -33,7 +33,7 @@ export class FeaturePage extends React.Component {
   render() {
     return (
       <div>
-        <H1>Features</H1>
+        <H1>Introduction Of One U Education</H1>
         <ul className={styles.list}>
           <li className={styles.listItem}>
             <p className={styles.listItemTitle}>Quick scaffolding</p>
